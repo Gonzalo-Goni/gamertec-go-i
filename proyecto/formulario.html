@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>GamerTec Formulario</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="imagenes/logosinfondo.png" alt="logo" /></div>
+      
+        <nav>
+          <ul>
+            <div class="menu">
+            <li>
+              <button class="boton"><a href="index.html">inicio</a></button>
+            </li>
+            <li>
+              <button class="boton">
+                <a href="productos.html">Productos</a>
+              </button>
+            </li>
+            <li>
+              <button class="boton">
+                <a href="formulario.html">Contactanos</a>
+              </button>
+            </li>
+            <li>
+              <button class="boton">
+                <a href="nosotros.html">Nosotros</a>
+              </button>
+            </li>
+            <li>
+              <button class="boton"><a href="ayuda.html">ayuda</a></button>
+            </li>
+          </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <form action="" class="contacto">
+      <fieldset class="formulario">
+        <legend class="formulario__titulo">Informacion Personal</legend>
+        <div class="formulario__nombre">
+          <div for="nombre">Nombre:
+           <input type="text" name="nombre" id="nombre" />
+          </div>
+          <div for="apellido">Apellido:
+           <input type="text" name="apellido" id="apellido" />
+          </div>
+        </div>
+        <div for="Consultas" class="formulario__consultas">motivo de la Consulta:
+          <select name="consulta" id="Consultas">
+            <option value="informacion">
+              necesito mas informacion de la pagina
+            </option>
+            <option value="ubicacion">
+              lugares fisicos donde encontrarnos</option>
+            <option value="otro">
+              otro</option>
+          </select>
+        </div>
+        <div for="aclaraciones" class="formulario__aclaraciones">aclaraciones:
+         <textarea name="aclaraciones" id="aclaraciones" cols="30" rows="10" ></textarea>
+       </div>
+        <div class="formulario__aceptar"> Acepto
+          <a href="terminos y condiciones.html">terminos y condiciones</a>
+          <input type="checkbox" name="Acepto" value="1" />
+        </div>
+        <input type="submit" value="enviar formulario" class="formulario__enviar"/>
+      </fieldset>
+    </form>
+    <footer>
+      <h2 class="seguinos">¡Seguinos en nuestras Redes!</h2>
+      <nav>
+        <ul>
+          <div class="redes">
+            <li>
+              <img src="imagenes/twitter.png" alt="logo de twitter" />
+            </li>
+            <li>
+              <img src="imagenes/facebook.png" alt="log de facebook" />
+            </li>
+            <li>
+              <img src="imagenes/instagram.png" alt="logo de instagram" />
+            </li>
+            <li>
+              <img src="imagenes/youtube.png" alt="logo de youtube" />
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

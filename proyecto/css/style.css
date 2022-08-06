@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 body {
-  background-color: gray;
+  background-color: rgb(109, 109, 109);
   min-width: 100%;
   min-height: 100vh;
 }
 header {
-  background: linear-gradient(rgb(109, 109, 109), rgb(0, 0, 0));
+  background: linear-gradient(rgb(0, 0, 0), rgb(109, 109, 109));
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -43,7 +43,8 @@ header {
 }
 
 footer {
-  background: linear-gradient(rgb(0, 0, 0), rgb(109, 109, 109));
+  background: linear-gradient(rgb(104, 104, 104), rgb(0, 0, 0));
+
   color: red;
   max-width: 100%;
   height: auto;
@@ -51,12 +52,51 @@ footer {
   justify-items: center;
   grid-template-rows: auto;
 }
-
-.perisfericos h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 60px;
-  margin: 4rem;
+.nosotros {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+.informacion-titulo {
+  justify-content: center;
+}
+.informacion-mapa {
+  height: auto;
+  width: auto;
+}
+.informacion-mapa iframe {
+  border-radius: 10px;
+  box-shadow: 10px 20px 40px -20px rgb(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  .nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 1rem;
+    grid-template-areas:
+      "titulo mapa"
+      "descripcion mapa"
+      "contactarnos contactarnos";
+  }
+  .informacion-titulo {
+    grid-area: titulo;
+  }
+  .informacion-descripcion {
+    grid-area: descripcion;
+  }
+  .informacion-mapa {
+    grid-area: mapa;
+  }
+  .informacion-contactarnos {
+    grid-area: contactarnos;
+  }
+  .perisfericos h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin: 4rem;
+  }
 }
 
 .gamas {
@@ -207,33 +247,7 @@ footer {
   border-radius: 5px;
   padding: 1rem;
 }
-.informacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 3rem;
-}
-.informacion div {
-  max-width: 60%;
-}
-.informacion h1 {
-  text-align: center;
-  font-size: 40px;
-  margin: 2rem;
-}
-.informacion h2 {
-  padding: 2rem;
-  font-size: 30px;
-}
-.informacion iframe {
-  border: solid black 2px;
-  border-radius: 10px;
-  box-shadow: 20px 10px 40px 0px rgba(255, 0, 0, 0.45);
-}
-.informacion__contactarnos {
-  text-align: center;
-  font-size: 30px;
-}
+
 .tabla {
   display: flex;
   justify-content: center;

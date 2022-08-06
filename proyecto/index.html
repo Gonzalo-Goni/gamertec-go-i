@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link
@@ -15,130 +14,112 @@
       href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Oswald&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>GamerTec</title>
   </head>
-  <body>
-    <header>
-
-      <div class="logo"><img src="imagenes/logosinfondo.png" alt="logo" /></div>
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container justify-content-center">
+  <body class="lead">
+    <header >
+      <div class="logo"><img class="agrandar" src="imagenes/logosinfondo.png" alt="logo" /></div>
+      <div >
+      <nav class="navbar navbar-expand-lg col-md-6 col-lg-10 mx-auto ">
+        <div class="container">
           
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active boton text-white" aria-current="page" href="index.html">inicio</a>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item boton">
+                <a class="nav-link active m-md-3 m-lg-3 m-xl-4 boton fs-2" aria-current="page" href="index.html">inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active boton text-white" href="productos.html">Productos</a>
+                <a class="nav-link active m-md-2 m-lg-3 m-xl-4 boton fs-2 " href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active boton text-white" aria-current="page" href="nosotros.html">Nosotros</a>
+                <a class="nav-link active m-md-2 m-lg-3 m-xl-4 boton fs-2" aria-current="page" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active boton text-white" aria-current="page" hhref="formulario.html">Contactanos</a>
+                <a class="nav-link active m-md-2 m-lg-3 m-xl-4 boton fs-2" aria-current="page" href="formulario.html">Contactanos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active boton text-white" aria-current="page" href="ayuda.html">ayuda</a>
+                <a class="nav-link active m-md-2 m-lg-3 m-xl-4 boton fs-2" aria-current="page" href="ayuda.html">ayuda</a>
               </li>
             </ul>
            
           </div>
         </div>
       </nav>  
-      </div>
-    </header>
-    <section>
-      <div class="productos">
-      <span class="productos__general" >
-          <a href="productos.html#teclado"
-          ><img src="imagenes/teclado.png" alt="imagen de teclado" /></a
-      ></span>
-      <span class="productos__general">
-        <a href="productos.html#mouses">
-          <img src="imagenes/mouse.png" alt="imagen de mouse" /></a
-      ></span>
     </div>
-    </section>
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-      </ul><div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
+      </div>
+      <div class="container-fluid col-10 mb-3">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="¿Que estas Buscando?" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Buscar</button>
+        </form>
+      </div>
+    
+    </header>
+  <main>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=cROLsKPH" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block fondo">
+            <h5 >Todo Lo que buscas en un solo lugar</h5>
+            <p>Los mejores y mas nuevos productos de tecnologia al mejor precio</p>
+          </div>
         </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
+        <div class="carousel-item">
+          <a href="productos.html#mouses"><img src="https://cdn.mos.cms.futurecdn.net/kZvGcNT2N9ZK7HH8RTd2NF-1200-80.jpg" class="d-block w-100" alt="..."></a>
+          <div class="carousel-caption d-none d-md-block fondo">
+            <h5>Mouses</h5>
+            <p>Todos nuestros mauses son originales y al mejor precio</p>
+          </div>
         </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-md-5 offset-md-1 mb-3">
-          <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of what's new and exciting from us.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
-            </div>
-          </form>
+        <div class="carousel-item">
+          <a href="productos.html#teclados"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/07/teclado-mecanico-2397587.jpg?itok=2CiWktSy" class="d-block w-100"  alt="..."></a>
+          <div class="carousel-caption d-none d-md-block fondo">
+            <h5>Teclados</h5>
+            <p>Todos nuestros teclados son originales y al mejor precio</p>
+          </div>
         </div>
       </div>
-      <p class="text-center text-muted">© 2022 Company, Inc</p>
-    </footer>
-    <footer>
-      <h2 class="seguinos"> ¡Seguinos en nuestras Redes!</h2>
-      <div class="redes">
-      <nav >
-        <ul>
-        
-          <li class="col">
-         <img src="imagenes/twitter.png" alt="logo de twitter" />
-          </li>
-          <li class="col">
-             <img src="imagenes/facebook.png" alt="log de facebook" />
-          </li>
-          <li class="col">
-            <img src="imagenes/instagram.png" alt="logo de instagram" />
-          </li>
-          <li class="col">
-            <img src="imagenes/youtube.png" alt="logo de youtube" />
-          </li>
-        </ul>
-      </nav>
-     </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+    <footer >
+      <ul class="nav border-bottom mx-auto">
+        <li class="nav-item m-lg-4 m-xl-5 m-md-3 m-sm-1 "><a href="index.html" class="nav-link px-1 text-muted boton">Inicio</a></li>
+        <li class="nav-item m-lg-4 m-xl-5 m-md-3 m-sm-1"><a href="productos.html" class="nav-link px-1 text-muted boton">Productos</a></li>
+        <li class="nav-item m-lg-4 m-xl-5 m-md-3 m-sm-1"><a href="nosotros.html" class="nav-link px-1 text-muted boton">Nosotros</a></li>
+        <li class="nav-item m-lg-4 m-xl-5 m-md-3 m-sm-1"><a href="formulario.html" class="nav-link px-1 text-muted boton">Contactanos</a></li>
+        <li class="nav-item m-lg-4 m-xl-5 m-md-3 m-sm-1"><a href="ayuda.html" class="nav-link px-1 text-muted boton">Ayuda</a></li>
+      </ul>
+        <div class="text-center mx-auto centrar">
+          <h5 class="fs-2 ">Seguinos en nuestras redes!</h5>
+          <div class="row">
+          <ul class="nav container col-12 ">
+            <li class="nav-item mx-auto agrandar"><img class="nav-link p-0 m-2 m-md-4" src="imagenes/twitter.png" alt="logo de twitter" /></li>
+            <li class="nav-item mx-auto agrandar"><img class="nav-link p-0 m-2 m-md-4" src="imagenes/facebook.png"  alt="log de facebook" /></li>
+            <li class="nav-item mx-auto agrandar"><img class="nav-link p-0 m-2 m-md-4" src="imagenes/instagram.png" alt="logo de instagram" /></li>
+            <li class="nav-item mx-auto agrandar"><img class="nav-link p-0 m-2 m-md-4" src="imagenes/youtube.png" alt="logo de youtube" /></li>
+          </ul>
+        </div>
+      
+      </div>
+      <p class="text-center text-muted">© 2022 GamerTec, Inc</p>
     </footer>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

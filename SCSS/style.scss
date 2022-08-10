@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(109, 109, 109);
+  min-width: 100%;
+  min-height: 100vh;
+}
+header {
+  background: linear-gradient(rgb(0, 0, 0), rgb(109, 109, 109));
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.logo {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+.boton {
+  color: white !important;
+  transition: 500ms;
+}
+.boton:hover {
+  color: red !important;
+}
+.agrandar {
+  transition: transform 500ms;
+}
+.agrandar:hover {
+  transform: scale(1.1);
+}
+.fondo {
+  transition: background-color 2s;
+}
+.fondo:hover {
+  background-color: black;
+  border-radius: 40px;
+  opacity: 1;
+}
+
+footer {
+  background: linear-gradient(rgb(104, 104, 104), rgb(0, 0, 0));
+
+  color: red;
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: auto;
+}
+.nosotros {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+.informacion-titulo {
+  justify-content: center;
+}
+.informacion-mapa {
+  height: auto;
+  width: auto;
+}
+.informacion-mapa iframe {
+  border-radius: 10px;
+  box-shadow: 10px 20px 40px -20px rgb(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  .nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 1rem;
+    grid-template-areas:
+      "titulo mapa"
+      "descripcion mapa"
+      "contactarnos contactarnos";
+  }
+  .informacion-titulo {
+    grid-area: titulo;
+  }
+  .informacion-descripcion {
+    grid-area: descripcion;
+  }
+  .informacion-mapa {
+    grid-area: mapa;
+  }
+  .informacion-contactarnos {
+    grid-area: contactarnos;
+  }
+  .perisfericos h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin: 4rem;
+  }
+}
+
+.gamas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  height: auto;
+  margin: 5rem;
+  padding: 3rem;
+  box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.45);
+}
+
+.card {
+  margin: 5rem;
+  max-width: 100%;
+  padding: 3rem;
+  border: solid black 2px;
+  border-radius: 10px;
+  box-shadow: 10px 20px 40px -20px rgba(255, 0, 0, 0.5);
+}
+.card__img {
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+}
+.card__titulo {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.card__descripcion {
+  padding: 1rem;
+}
+.card__boton {
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  padding: 1rem;
+  border: solid black 1px;
+  border-radius: 10px;
+}
+.gamas h2 {
+  font-size: 30px;
+  margin-right: 4rem;
+  text-align: left;
+}
+
+.alta {
+  background-color: gold;
+}
+
+.media {
+  background-color: silver;
+}
+
+.baja {
+  background-color: rgb(205, 127, 50);
+}
+.oro h2 {
+  color: gold;
+}
+.plata h2 {
+  color: silver;
+}
+.bronce h2 {
+  color: rgb(205, 127, 50);
+}
+.formulario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: solid black 3px;
+  border-radius: 30px;
+  max-width: 60%;
+  padding: 4rem;
+  margin: 5rem;
+  margin-left: 25rem;
+  background-color: #595959;
+  box-shadow: 30px 30px 40px 0px rgba(255, 0, 0, 0.45);
+}
+
+.formulario__titulo {
+  text-align: center;
+  font-size: 30px;
+}
+.formulario__nombre {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+.formulario__nombre div {
+  padding: 1rem;
+}
+.formulario__nombre input {
+  margin: 1rem;
+  color: white;
+  background-color: red;
+  border: solid black 2px;
+  border-radius: 3px;
+}
+.formulario__consultas {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  font-size: 20px;
+}
+.formulario__consultas select {
+  margin-left: 1rem;
+  color: white;
+  background-color: red;
+  border: solid black 2px;
+  border-radius: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.formulario__aclaraciones {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin: 1rem;
+}
+.formulario__aclaraciones textarea {
+  margin-left: 1rem;
+  color: white;
+  background-color: red;
+  border: solid black 2px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.formulario__aceptar {
+  margin: 1rem;
+  font-size: 20px;
+  padding: 1rem;
+}
+.formulario__aceptar a {
+  color: red;
+}
+.formulario__aceptar input {
+  justify-content: flex-end;
+  width: 20px;
+  height: 20px;
+}
+.formulario__enviar {
+  color: white;
+  background-color: red;
+  border: solid black 2px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.tabla {
+  display: flex;
+  justify-content: center;
+}
+.daños {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 4rem;
+  border: solid black;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  max-width: 70%;
+  padding: 2rem;
+  box-shadow: 20px 10px 40px 0px rgba(255, 0, 0, 0.45);
+}
+.daños th {
+  margin: 4rem;
+  font-size: 30px;
+  border: solid black;
+  margin: 1rem;
+}
+.daños tr {
+  margin: 4rem;
+  font-size: 20px;
+}
+.daños td {
+  border: solid black;
+  margin: 1rem;
+  padding: 1rem;
+}

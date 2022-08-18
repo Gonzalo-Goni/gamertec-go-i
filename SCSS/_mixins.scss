@@ -1,0 +1,37 @@
+@mixin GridCenter {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+@mixin Gradiant($color1, $color2) {
+  background: linear-gradient($color1, $color2);
+}
+@mixin Carta() {
+  margin: 5rem;
+  max-width: 100%;
+  padding: 3rem;
+  border: solid black 2px;
+  border-radius: 10px;
+  box-shadow: 10px 20px 40px -20px rgba(255, 0, 0, 0.5);
+  .card__img {
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+  }
+  .card__titulo {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  .card__descripcion {
+    padding: 1rem;
+  }
+  .card__boton {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 1rem;
+    border: solid black 1px;
+    border-radius: 10px;
+  }
+}

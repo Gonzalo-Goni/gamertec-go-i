@@ -4,15 +4,17 @@
 
 body {
   background-color: $primary-color;
-  min-width: 100%;
-  min-height: 100vh;
+  width: 100%;
 }
 header {
   @include Gradiant(black, rgb(109, 109, 109));
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  width: 100%;
+  width: auto;
+}
+main {
+  max-height: 100vh;
 }
 .logo {
   @include GridCenter;
@@ -48,27 +50,27 @@ footer {
   height: auto;
   grid-template-rows: auto;
 }
+
 .nosotros {
-  display: grid;
+  @include GridCenter;
   grid-template-rows: auto;
-  justify-items: center;
 }
 .informacion-titulo {
   justify-content: center;
 }
 .informacion-mapa {
-  height: auto;
-  width: auto;
+  @include GridCenter;
 }
 .informacion-mapa iframe {
   border-radius: 10px;
   box-shadow: 10px 20px 40px -20px rgb(0, 0, 0, 0.5);
+  width: auto;
+  height: auto;
 }
 @media (min-width: 768px) {
   .nosotros {
-    display: grid;
+    @include GridCenter;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     margin: 1rem;
     grid-template-areas:
       "titulo mapa"

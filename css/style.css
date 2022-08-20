@@ -7,8 +7,7 @@
 
 body {
   background-color: rgb(109, 109, 109);
-  min-width: 100%;
-  min-height: 100vh;
+  width: 100%;
 }
 
 header {
@@ -16,7 +15,11 @@ header {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  width: 100%;
+  width: auto;
+}
+
+main {
+  max-height: 100vh;
 }
 
 .logo {
@@ -65,8 +68,9 @@ footer {
 
 .nosotros {
   display: grid;
-  grid-template-rows: auto;
   justify-items: center;
+  justify-content: center;
+  grid-template-rows: auto;
 }
 
 .informacion-titulo {
@@ -74,20 +78,24 @@ footer {
 }
 
 .informacion-mapa {
-  height: auto;
-  width: auto;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
 }
 
 .informacion-mapa iframe {
   border-radius: 10px;
   box-shadow: 10px 20px 40px -20px rgba(0, 0, 0, 0.5);
+  width: auto;
+  height: auto;
 }
 
 @media (min-width: 768px) {
   .nosotros {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     justify-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
     margin: 1rem;
     grid-template-areas: "titulo mapa" "descripcion mapa" "contactarnos contactarnos";
   }
